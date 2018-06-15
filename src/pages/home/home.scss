@@ -1,0 +1,11 @@
+page-home {
+  .mi-footer {
+    @include position(null, null, 0, 0);
+
+    position: absolute;
+    z-index: $z-index-toolbar;
+    display: block;
+
+    width: 100%;
+  }
+}

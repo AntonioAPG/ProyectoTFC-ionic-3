@@ -1,0 +1,33 @@
+<!--
+  Generated template for the NuevaClasePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>nuevaClase</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding margin margin-top>
+
+  <ion-item>
+    <ion-label color="primary" floating>Curso</ion-label>
+    <ion-input type="text" required [(ngModel)]="clase.curso"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary" floating>Asignatura</ion-label>
+    <ion-input type="text" required="" [(ngModel)]="clase.asignatura"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="primary" floating>Año</ion-label>
+    <ion-datetime displayFormat="YYYY" pickerFormat="YYYY" max="2040" [(ngModel)]="myDate"></ion-datetime>
+  </ion-item>
+  <button ion-button margin-top (click)="crearClase()"> agregar</button>
+  <button ion-button color="danger" margin-top (click)="cancelar()" > cancelar</button>
+
+</ion-content>

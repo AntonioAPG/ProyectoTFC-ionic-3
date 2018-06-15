@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Clases
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item *ngFor="let clase of clases" (click)="itemSelected(clase)">
+      {{ clase.curso + "  ->  " + clase.asignatura }}
+    </button>
+  </ion-list>
+
+</ion-content>
